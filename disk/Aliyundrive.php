@@ -8,7 +8,7 @@ class Aliyundrive {
         $this->disktag = $tag;
         //$this->auth_url = 'https://websv.aliyundrive.com/token/refresh';
         $this->auth_url = 'https://auth.aliyundrive.com/v2/account/token';
-        $this->api_url = 'https://api.aliyundrive.com/v2';
+        $this->api_url = 'https://api.aliyundrive.com/v3';
         $this->driveId = getConfig('driveId', $tag);
         $res = $this->get_access_token(getConfig('refresh_token', $tag));
     }
